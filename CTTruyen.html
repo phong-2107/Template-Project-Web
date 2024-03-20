@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangaSmurf</title>
+
+    <link rel="icon" type="image/png" href="./assets/img/icon logo.png">
+
+    <!-- LINK BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- LINK REMIXICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">W
+    <!-- LINK JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+     <!-- LINK SLICK -->
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+    <!-- LINK STYLE CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style_rank.css">
+    <link rel="stylesheet" href="./assets/css/style_CT.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="nav__side">
+            <nav class="containers nav">
+                <a href="#" class="nav__logo">
+                    <img class="nav__logo-img" src="./assets/img/logo1.png" alt="logo website">
+                </a>
+                
+                
+                <div class="nav__menu nav__menu-list" id="nav-menu">
+                    <div class="search">
+                        <div class="icon"><i class="ri-search-2-line"></i></div>
+                        <div class="input">
+                            <input type="text" placeholder="Tìm Kiếm ..." id="search-truyen">
+                        </div>
+                        <span class="clear"><i class="ri-close-large-line"></i></span>
+                    </div>
+                    
+                    <div class="nav__buttons">
+                        <i class="ri-moon-fill change-theme" id="theme-button"></i>
+                        
+                    </div>
+                    <div class="nav__login">
+                        <div class="btn__regis mr-2">
+                            <a href="#">Đăng ký</a>
+                        </div>
+                        <div class=" btn__login">
+                            <a href="#">Đăng nhập</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </nav>
+        </div>
+        <div class="nav__content">
+            <nav class="containers nav__content">
+                <input type="checkbox" id="sidebar-active">
+                <label for="sidebar-active" class="open-sidebar-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </label>
+                <label id="overlay" for="sidebar-active"></label>
+                <div class="links-container grids">
+                    <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    </label>
+
+                    
+                    <a href="#" class="nav__item nav__link active-link"> 
+                        <div class="dropdown">
+                            <a href="#" class="nav__link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thể loại truyện</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a class="dropdown-item item-main" href="./ListComic.html">Tất cả</a>
+                                        <a class="dropdown-item" href="#">Xuyên không</a>
+                                        <a class="dropdown-item" href="#">Adventure</a>
+                                        <a class="dropdown-item" href="#">One short</a>
+                                        <a class="dropdown-item" href="#">Chuyển sinh</a>
+                                        <a class="dropdown-item" href="#">Truyện màu</a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="dropdown-item item-main" href="#">Theo Cảm xúc</a>
+                                        <a class="dropdown-item" href="#">Nhẹ nhàng</a>
+                                        <a class="dropdown-item" href="#">Kinh dị</a>
+                                        <a class="dropdown-item" href="#">Lãng mạng</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Comedy</a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="dropdown-item item-main" href="#">Theo Khu Vực</a>
+                                        <a class="dropdown-item" href="#">Manwa</a>
+                                        <a class="dropdown-item" href="#">Manhua</a>
+                                        <a class="dropdown-item" href="#">Manga</a>
+                                        <a class="dropdown-item" href="#">Comic</a>
+                                        <a class="dropdown-item" href="#">Webtoon</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="nav__link active-link">Trending</a>
+                    <a href="#home" class="nav__item nav__link active-link">Theo dõi</a>
+                    <a href="#home" class="nav__item nav__link active-link">Lịch sử</a>
+                    <a href="./Ranking.html" class="nav__item nav__link active-link">Xếp hạng</a>
+                    <a href="#home" class="nav__item nav__link active-link">Tìm truyện</a>
+                    <a href="#home" class="nav__item nav__link active-link">Mới cập nhật</a>
+                    <div class="nav__login">
+                        <div class="btn__regis mr-2">
+                            <a href="#">Đăng ký</a>
+                        </div>
+                        <div class=" btn__login">
+                            <a href="#">Đăng nhập</a>
+                        </div>
+                    </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class=" main__top detail section">
+            <div class=" detail__container containers">
+                <div class="detail__infor containers">
+                    <div class="bg__detail">
+                        <div class="bg">
+                            <img src="./assets/img/manga5.jpg" alt="bg-item" class="bg-main">
+                            
+                            <div class="item-infor bg__detail-infor">
+                                <div class="infor">
+                                    <p class="item-author">Gege Akutami</p>
+                                    <h3 class="item-title">Kanojo,  Okarishimasu</h3>
+                                    
+                                    <div class="rating">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="pre">
+                                    <img src="./assets/img/PreLight.png" alt="goi premium">
+                                </div>
+                                <div class=" btn__follow">
+                                    <a href="3">Theo dõi</a>
+                                    <i class="ri-bookmark-fill"></i>
+                                </div>
+                            </div>
+                            <div class="background-item"></div>
+                        </div>
+                        .
+                        <div class="poster-detail" >
+                            <div class="background-detail" >
+                                <div class="bg-item"></div>
+                                <a href="./readComic.html">
+                                    <i class="fa-solid fa-book-open" title="click here"></i>
+                                </a>
+                                
+                            </div>
+                            
+                            <img src="./assets/img/poster10.jpg" alt="poster" class="">
+                        </div>
+                        <div class="content-detail">
+                            <div class="time-detail">
+                                <i class="ri-time-line"></i>
+                                <span class="time">8 gio truoc</span>
+                            </div>
+                            <div class="type-detail">
+                                <a href="#" class="item-type">Tình cảm</a>
+                                <a href="#" class="item-type">Lãng mạng</a>
+                                <a href="#" class="item-type">Manga</a>
+                                <a href="#" class="item-type">khám phá</a>
+                            </div>
+                        </div>
+                        <div class="btn-detail">
+                            <a class="btn__action" href="#">Đọc tiếp chap <span class="chapter">01</span></a>
+                        </div>
+                    </div>
+                    <div class="content-main">
+                        <div class="content-title">
+                            <i class="ri-file-text-line"></i> Nội dung
+                        </div>
+                        <div class="content">
+                            <p>Tô Hiểu bị kéo vào quy tắc chuyện lạ, tất cả mọi người không coi trọng hắn, lại không nghĩ đến hắn trực tiếp rút trúng thiên phú cấp SSS , một trận thao tác mạnh như hổ! Quy tắc cho hắn muốn làm gì thì làm,! Quỷ dị xuất hiện hắn đi lên đánh lui, đánh cho đối phương hoài nghi quỷ sinh, thậm chí còn thu phục một con teddy quỷ dị làm người hầu mà....</p>
+                        </div>
+
+                        <div class="content-More">
+                            <div class="content-title">
+                                <i class="ri-file-text-line"></i> Thông tin thêm
+                            </div>
+                            <div class="content">
+                                <div class="chapter">
+                                    <i class="ri-send-plane-fill"></i>
+                                    <span class="count">00</span> Chương đã đăng
+                                </div>
+                                <div class="view">
+                                    <i class="ri-eye-line"></i>
+                                    <span class="count">05</span> Lượt xem
+                                </div>
+                                <div class="review">
+                                    <i class="ri-message-2-fill"></i>
+                                    <span class="count">00</span> Lượt đánh giá
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-close">Xem thêm</div>
+                    </div>
+                </div>
+
+                <div class="detail__list containers">
+                    <div class="content-title">
+                        <i class="ri-file-text-line"></i> Danh sách Chương
+                    </div>
+                    <div class="d-flex flex-column mb-3 w-100 mt-3">
+                        <div class="p-2 chapter-item">
+                            <div class="row">
+                                <div class="col chapter">
+                                  Chương 1
+                                </div>
+                                <div class="col-6 content">
+                                    Lorem ipsum dolor sit amet.
+                                </div>
+                                <div class="col time">
+                                  8 giờ trước
+                                </div>
+                                <div class="col view">
+                                    200 lượt xem
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 chapter-item">
+                            <div class="row">
+                                <div class="col chapter">
+                                  Chương 1
+                                </div>
+                                <div class="col-6 content">
+                                    Lorem ipsum dolor sit amet.
+                                </div>
+                                <div class="col time">
+                                  8 giờ trước
+                                </div>
+                                <div class="col view">
+                                    200 lượt xem
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 chapter-item">
+                            <div class="row">
+                                <div class="col chapter">
+                                  Chương 1
+                                </div>
+                                <div class="col-6 content">
+                                    Lorem ipsum dolor sit amet.
+                                </div>
+                                <div class="col time">
+                                  8 giờ trước
+                                </div>
+                                <div class="col view">
+                                    200 lượt xem
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <p class="footer__description">
+                    Website luôn cập nhật nhanh và sớm nhất các đầu truyện hot<br>
+                    Đảm bảo tính bảo mật và trai nghiệm của khách hàng<br>
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">Main Menu</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Menus</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Offer</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Events</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Information</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="" class="footer__link">Contact</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Order & Returns</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Videos</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Reservation</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Address</h3>
+                    <ul class="footer__links">
+                        <li class="footer__information">
+                            District 9
+                            HoChiMinh City, VietNam
+                        </li>
+                        <li class="footer__information">
+                            9AM - 11PM
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Social Media</h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__info container">
+
+            <span class="footer__copy">
+                &#169; Copyright NguyenPhong. All rights reserved
+            </span>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <script type="text/javascript">
+        const CloseContent = document.querySelector(".content-main .content-close");
+        const Content = document.querySelector(".content-main");
+        CloseContent.onclick = () => {
+            if(CloseContent.textContent == "Xem thêm"){
+                Content.classList.toggle('active-content');
+                CloseContent.textContent = "Thu gọn";
+            }
+            else if(CloseContent.textContent == "Thu gọn"){
+                Content.classList.remove('active-content');
+                CloseContent.textContent = "Xem thêm";
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        $('.autoplay').slick({
+        slidesToShow: 7,
+        slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 1000,  
+        });
+    </script>
+
+    
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+</body>
